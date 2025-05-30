@@ -1,0 +1,35 @@
+<aircraft>
+    <name>Super A350 Mod</name>
+    <author>YourNameHere</author>
+
+    <!-- Make aircraft 4x bigger -->
+    <scale>4.0</scale>
+
+    <!-- Increase engine power for more speed -->
+    <engine>
+        <type>jet</type>
+        <number>2</number>
+        <maxThrust>1000000</maxThrust> <!-- Extreme thrust -->
+        <thrustReverser>1</thrustReverser>
+    </engine>
+
+    <!-- Reduce drag to increase top speed -->
+    <aero>
+        <dragCoefficient>0.01</dragCoefficient>
+        <wingArea>800</wingArea>
+    </aero>
+
+    <!-- Optional: make it heavier to feel realistic -->
+    <mass>
+        <empty>600000</empty> <!-- in kg -->
+        <maxTakeOff>1200000</maxTakeOff>
+    </mass>
+
+    <!-- Optional flight dynamics tweak -->
+    <flightModel>basic</flightModel>
+
+    <!-- Visual model path -->
+    <model>
+        <file>models/A350.gltf</file>
+    </model>
+</aircraft>
